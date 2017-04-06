@@ -12,7 +12,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/view_composers.php' => config_path('view_composers')
+            __DIR__ . '/../config/view_composers.php' => config_path('view_composers.php')
         ], 'config');
     }
 }
