@@ -1,0 +1,26 @@
+{
+  "name": "leantony/view_composer",
+  "description": "Laravel view composer, with cache support",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "leantony",
+      "email": "chachaantony@gmail.com"
+    }
+  ],
+  "require": {
+    "illuminate/view": "~5.1",
+    "illuminate/cache": "~5.1",
+    "illuminate/console": "~5.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Leantony\\ViewComposer\\": "src/",
+      "Leantony\\ViewComposer\\Providers\\": "src/providers",
+      "Leantony\\ViewComposer\\Commands\\": "src/commands"
+    }
+  }
+}
