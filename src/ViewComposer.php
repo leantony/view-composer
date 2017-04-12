@@ -132,7 +132,7 @@ abstract class ViewComposer
 
             $data = $this->getData();
             $this->cache->put($key, $data,
-                $this->app['config']->get('view_composers.caching_for', $this->cacheFor));
+                $this->app['config']->get('view_composers.cache_for', $this->cacheFor));
             $view->with($var, $data);
         }
     }
@@ -157,7 +157,7 @@ abstract class ViewComposer
         } else {
             $data = $this->getData();
             $this->cache->tags($this->getTags())
-                ->put($key, $data, $this->app['config']->get('view_composers.caching_for', $this->cacheFor));
+                ->put($key, $data, $this->app['config']->get('view_composers.cache_for', $this->cacheFor));
             $view->with($var, $data);
         }
     }
